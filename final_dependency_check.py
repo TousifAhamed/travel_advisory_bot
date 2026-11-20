@@ -84,10 +84,10 @@ except ImportError as e:
 
 # PDF processing
 try:
-    import PyPDF2
-    print("✅ PyPDF2:", PyPDF2.__version__)
+    import pypdf
+    print("✅ pypdf:", pypdf.__version__)
 except ImportError as e:
-    print("❌ PyPDF2:", str(e))
+    print("❌ pypdf:", str(e))
 
 print("\n" + "=" * 50)
 

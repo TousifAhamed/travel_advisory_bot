@@ -73,7 +73,7 @@ def check_dependencies():
     deps_to_check = [
         "streamlit",
         "ollama", 
-        "PyPDF2",
+        "pypdf",
         "Pillow",
         "openai",
         "python-dotenv"

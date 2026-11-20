@@ -10,7 +10,7 @@ python check_status.py
 
 echo.
 echo 🔧 Installing missing dependencies...
-pip install openai-whisper langdetect "googletrans==4.0.0rc1" transformers torch PyPDF2 Pillow opencv-python --quiet --upgrade
+pip install openai-whisper langdetect "googletrans==4.0.0rc1" transformers torch pypdf Pillow opencv-python --quiet --upgrade
 
 echo.
 echo 🧹 Clearing Python cache...

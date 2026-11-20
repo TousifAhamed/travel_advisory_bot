@@ -1,4 +1,4 @@
-import PyPDF2
+import pypdf
 import io
 from typing import Any
 from ..models import InputProcessor, ProcessedInput, InputType
@@ -20,7 +20,7 @@ class PDFProcessor(BaseProcessor):
                 pdf_file = io.BytesIO(input_data)
             
             # Extract text from PDF
-            pdf_reader = PyPDF2.PdfReader(pdf_file)
+            pdf_reader = pypdf.PdfReader(pdf_file)
             text_content = ""
             
             for page in pdf_reader.pages:

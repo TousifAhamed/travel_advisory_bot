@@ -13,7 +13,7 @@ pip install -e .
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ Failed to install dependencies
     echo Trying alternative installation...
-    pip install streamlit openai transformers torch torchvision Pillow PyPDF2 python-multipart langdetect googletrans opencv-python requests beautifulsoup4 folium plotly python-dotenv aiofiles httpx pydantic numpy pandas
+    pip install streamlit openai transformers torch torchvision Pillow pypdf python-multipart langdetect googletrans opencv-python requests beautifulsoup4 folium plotly python-dotenv aiofiles httpx pydantic numpy pandas
 )
 
 echo Step 3: Installing Ollama for Devstral...
