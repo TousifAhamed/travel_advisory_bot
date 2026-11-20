@@ -3,6 +3,7 @@
 Main entry point for the Travel Advisory Bot application
 """
 
+import subprocess
 import sys
 import os
 import asyncio
@@ -19,11 +20,11 @@ def run_streamlit():
     """Run the Streamlit web interface"""
     try:
         import streamlit as st
-        os.system(f"streamlit run {os.path.join(os.path.dirname(__file__), 'src', 'travel_bot', 'ui', 'streamlit_app.py')}")
+        subprocess.run([sys.executable, "-m", "streamlit", "run", os.path.join(os.path.dirname(__file__), 'src', 'travel_bot', 'ui', 'streamlit_app.py')])
     except ImportError:
         print("Streamlit not installed. Installing...")
-        os.system("pip install streamlit")
-        os.system(f"streamlit run {os.path.join(os.path.dirname(__file__), 'src', 'travel_bot', 'ui', 'streamlit_app.py')}")
+        subprocess.run([sys.executable, "-m", "pip", "install", "streamlit"], check=True)
+        subprocess.run([sys.executable, "-m", "streamlit", "run", os.path.join(os.path.dirname(__file__), 'src', 'travel_bot', 'ui', 'streamlit_app.py')])
 
 def run_console_demo():
     """Run a simple console demo"""
