@@ -60,7 +60,7 @@ When successful, you should see:
 
 ### If dependencies are missing:
 ```cmd
-pip install streamlit python-dotenv requests ollama PyPDF2 Pillow transformers torch
+pip install streamlit python-dotenv requests ollama pypdf Pillow transformers torch
 ```
 
 ### If Devstral is not available:

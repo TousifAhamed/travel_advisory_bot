@@ -14,7 +14,7 @@ pip install openai transformers torch torchvision --quiet --upgrade --index-url 
 
 echo.
 echo 🎥 Multimodal processing...
-pip install openai-whisper opencv-python Pillow PyPDF2 --quiet --upgrade
+pip install openai-whisper opencv-python Pillow pypdf --quiet --upgrade
 
 echo.
 echo 🌐 Language processing...

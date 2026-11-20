@@ -20,7 +20,7 @@ def install_dependencies():
         "googletrans==4.0.0rc1",
         "transformers",
         "torch",
-        "PyPDF2",
+        "pypdf",
         "Pillow",
         "opencv-python"
     ]

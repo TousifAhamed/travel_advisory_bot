@@ -182,7 +182,7 @@ def check_dependencies():
         ("streamlit", "Web app framework", False),
         ("openai", "OpenAI API client", False),
         ("PIL", "Python Imaging Library", False),
-        ("PyPDF2", "PDF processing", False)
+        ("pypdf", "PDF processing", False)
     ]
     
     dep_score = 0
